@@ -1,11 +1,12 @@
 
 const Banner = () =>{
   const path = process.env.PUBLIC_URL;
+  const bullet = Array.from(Array(5), () => <li><span className="banner-bullet"></span></li>)
 
   return(
     <section>
       <h2 className="text-[0px]">banner</h2>
-        <div className="min-h-[555px] w-full min-w-[1240px] max-w-[3840px] overflow-hidden relative">
+        <div className="grid-1240 overflow-hidden relative">
           <button className="slideBtn bg-[url('/public/images/left-slide.png')] left-[100px]"></button>
           <button className="slideBtn bg-[url('/public/images/right-slide.png')] right-[100px]"></button>
 
@@ -32,24 +33,14 @@ const Banner = () =>{
             </li>
           </ul>
         </div>
-
-
         <div className="absolute bottom-0 flex items-center justify-center w-full">
           <button className="mt-1 w-[34px] h-[34px] block bg-[url('/public/images/stop-btn.svg')]"></button>
 
           <ul className="flex space-x-1 z-10 h-[34px] items-center ">
-            <li><span className="banner-bullet"></span></li>
-            <li><span className="banner-bullet"></span></li>
-            <li><span className="banner-bullet"></span></li>
-            <li><span className="banner-bullet"></span></li>
-            <li><span className="banner-bullet"></span></li>
+            { bullet }
           </ul>
         </div>
     </div>
-
-
-
-
     </section>
   )
 }

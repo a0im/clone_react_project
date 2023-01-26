@@ -1,7 +1,12 @@
 
 import { Route , Routes , BrowserRouter} from "react-router-dom";
+import { useDispatch } from "react-redux";
+import axios from "axios";
+import { useEffect } from "react";
+import { setContent } from "./store/store";
 import Header from "./component/Header";
 import Main from "./component/Main";
+import Footer from "./component/Footer";
 
 /*
   tailwind , reactRouter , redux // immer ??? 보류 //axios // react icons
@@ -20,6 +25,19 @@ import Main from "./component/Main";
 
   // className="bg-[#1b1b1b]"
 const App = () => {
+  const path = process.env.PUBLIC_URL;
+
+  let dispatch = useDispatch()
+
+
+  useEffect(() => {
+    axios.get(`${path}/db/db.json`)
+    .catch(err => console.log(err,"--error"))
+    .then(res => {
+      dispatch(setContent(res.data))
+    })
+  },[])
+
   return (
     <div >
       <BrowserRouter>
@@ -27,6 +45,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Main/>}/>     
       </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );

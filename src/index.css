@@ -20,7 +20,6 @@
 
   img{
     @apply block ;
-    
   }
 }
 
@@ -36,6 +35,20 @@
 
   .slideBtn {
     @apply bg-center bg-no-repeat bg-cover absolute w-[100px] h-[100px] top-[186px] z-10
+  }
+
+  .grid-1240{
+    @apply min-h-[555px] w-full min-w-[1240px] max-w-[3840px]
+  }
+  .footer-a{
+    @apply inline-block hover:text-blue-700
+  }
+
+  .footer-span > span{
+    @apply pr-[6px]
+  }
+  .content-sl-btn{
+    @apply absolute top-1/2 translate-y-[-50%] h-[50px] w-[30px]
   }
 }
 

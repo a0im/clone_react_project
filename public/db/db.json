@@ -1,1 +1,43 @@
 
+{
+ "data" : [
+  { 
+    "title" : "골때리는 그녀들",
+    "type" : "드라마",
+    "genre" : "코미디",
+    "point" : 100,
+    "img" : "/images/골때리는그녀들.jpeg"
+  },
+
+  { 
+    "title" : "나는솔로",
+    "type" : "아무거나",
+    "genre" : "아무고나",
+    "point" : 300,  
+    "img" : "/images/나는솔로.jpeg"         
+  },
+  { 
+    "title" : "라디오스타",
+    "type" : "예능",
+    "genre" : "오락",
+    "point" : 400,
+    "img" : "/images/라스.jpeg"         
+
+    
+  },
+  { 
+    "title" : "런닝맨",
+    "type" : "예능",
+    "genre" : "오락",
+    "point" : 700,
+    "img" : "/images/런닝맨.jpeg"         
+  },
+  { 
+    "title" : "불타는 트롯맨",
+    "type" : "예능",
+    "genre" : "오락",
+    "point" : 20,
+    "img" : "/images/불타는트롯맨.jpeg"       
+  }
+ ] 
+}
