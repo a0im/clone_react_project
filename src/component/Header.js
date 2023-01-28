@@ -4,8 +4,8 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 const Header = () => {
   const path = process.env.PUBLIC_URL;
 
-  let topNav = ["로그인","이용권","쿠폰·코인","웨이브온","이벤트"].map(text => {
-    return <li className="px-[10px]"><Link to="/">{ text }</Link></li>
+  let topNav = ["로그인","이용권","쿠폰·코인","웨이브온","이벤트"].map((text , i) => {
+    return <li key={i} className="px-[10px]"><Link to="/">{ text }</Link></li>
   })
 //usparam 받아와서 색상하얗게
   return (
@@ -22,12 +22,11 @@ const Header = () => {
               <Link to='/'><img src={`${path}/images/logo.svg`} alt="" /></Link>
             </h1>
             <nav>
-                <ul className="flex text-[#a4a4a4] space-x-5 text-xl font-medium">
-                  
+                <ul className="flex text-[#a4a4a4] space-x-5 text-xl font-medium">      
                   <li className="px-[10px] text-white"><Link to='/'>홈</Link></li>
                   <li className="px-[10px] "><Link to='/'>카테고리</Link></li>
                   <li className="px-[10px] hover:text-white"><Link to='/'>LIVE</Link></li>
-                  <li className="px-[10px] hover:text-white"><Link to='/'>MY</Link></li>
+                  <li className="px-[10px] hover:text-white"><Link to='/my'>MY</Link></li>
                 </ul>
             </nav>
           </div>

@@ -30,7 +30,7 @@
   }
 
   .banner-bullet {
-    @apply inline-block w-[10px] h-[10px] bg-[#606060] rounded-full
+    @apply inline-block w-[10px] h-[10px] rounded-full
   }
 
   .slideBtn {

@@ -2,12 +2,11 @@ const path = process.env.PUBLIC_URL;
 
 const Footer = () => {
   const navText = ["회사소개","인재채용","서비스소개","이용약관","개인정보 처리방침","고객센터"]
-  const navEl = navText.map((text)=>{
-    return <li><a className={text == "이용약관" ? "footer-a":"font-bold"} href="#">{text}</a></li>
+  const navEl = navText.map((text , i)=>{
+    return <li key={i}><a className={text == "이용약관" ? "font-bold":"footer-a"} href="#">{text}</a></li>
   })
 
   
-
   return(
     <footer className="grid-1240">
       <div className="w-[1240px] m-auto text-[#717171] relative">

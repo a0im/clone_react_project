@@ -7,6 +7,7 @@ import { setContent } from "./store/store";
 import Header from "./component/Header";
 import Main from "./component/Main";
 import Footer from "./component/Footer";
+import My from "./component/My";
 
 /*
   tailwind , reactRouter , redux // immer ??? 보류 //axios // react icons
@@ -40,10 +41,11 @@ const App = () => {
 
   return (
     <div >
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
         <Route path="/" element={<Main/>}/>     
+        <Route path="/my" element={<My/>}/>     
       </Routes>
       <Footer/>
       </BrowserRouter>
