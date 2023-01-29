@@ -39,10 +39,9 @@ const App = () => {
       dispatch(setContent(res.data))
     })
   },[])
-  // basename={process.env.PUBLIC_URL}
   return (
     <div >
-      <BrowserRouter >
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
         <Route path="/" element={<Main/>}/>     

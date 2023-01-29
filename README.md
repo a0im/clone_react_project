@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+WAVVE clone coding
+#  **PROFILE PORTFOLIO**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📃 설명
+리엑트 프레임워크를 이용해서 웨이브 홈페이지의 메인 그리고 서브페이지를 구현했습니다.
+<br>
+<br>
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
+## 🔧 사용툴 , 사용언어
+  - SASS
+  - vanilla Javascript
+  - CSS3 
+  - HTML5
+<br>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔍 기능설명
+***
+### 베너 슬라이드
+베너에 캐로셀 슬라이드를 구현했습니다
+슬라이드의 이미지는 최초 랜더링 이후의 랜더링을 막기위해서
+usememo를 통해서 요소를 생성했습니다.
 
-### `yarn test`
+### 메인 컨텐츠 
+모든 이미지를 한 객체에 담아
+각 행에서 요구하는 키워드에 해당하는 컨텐츠를 분류해서 화면에 출력하도록 구현했습니다.
+컨텐츠는 최대10개 렌더링되도록 설정했으며
+5개의 컨텐츠 단위의 슬라이드 기능을 추가했습니다 .
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 👩‍💻 감상 
+프로젝트를 진행하기 전에는 돔요소를 어떻게 불러오고 사용해야하는지 감이 잡히질 않았는데 이번 프로젝트를 계기로 리엑트를 통한 동적인 웹사이트를 만들어갈수 있는 계기가 되어준 프로젝트라고 생각합니다.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📚 어려웠던 점
+***
+useMemo와 useEffect의 의존성 배열에 따른 
+렌더링될때의 시점이 다르다는 점을 알게되었습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+useRef로 받아온 요소의 고정적인 넓이값을
+useMemo 를 통해서
+추가적인 렌더링을 막고자 의존성 배열을[]로 입력하고 값을 출력했지만
+ref의 값이undefined이 출력하는걸 확인했습니다 같은 두번째인자를 의존성 배열로 받는 useEffect로 실행시에 정상적으로 돔값을 받아오는걸 확인하고 두 훅의 랜더링 시점이 다르다는걸 깨닫게 되었습니다.
