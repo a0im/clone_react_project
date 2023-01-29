@@ -35,13 +35,14 @@ const App = () => {
     axios.get(`${path}/db/db.json`)
     .catch(err => console.log(err,"--error"))
     .then(res => {
+      console.log(res.data);
       dispatch(setContent(res.data))
     })
   },[])
-
+  // basename={process.env.PUBLIC_URL}
   return (
     <div >
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter >
       <Header/>
       <Routes>
         <Route path="/" element={<Main/>}/>     

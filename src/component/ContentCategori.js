@@ -38,7 +38,7 @@ let contentInfo  = [
     id : 5,
     title : "#미스터리 #스릴러",
     categori : {
-      genre : ["미스터리" , "오락"],
+      genre : ["미스테리" ,"미스터리", "오락"],
       type : "all"
     }
   }

@@ -50,6 +50,25 @@
   .content-sl-btn{
     @apply absolute top-1/2 translate-y-[-50%] h-[50px] w-[30px]
   }
+
+  .sns-a {
+    @apply w-[60px] h-[60px] rounded-full bg-white flex justify-center items-center
+  }
+  .my-sns{
+    @apply w-8 h-8 bg-center bg-no-repeat leading-9
+  }
+
+  .input-style{
+    @apply w-full text-sm block h-[53px] p-5 bg-[#2f2f2f]
+  }
+
+  .before-checkedBox{
+    @apply before:content-[''] before:block before:w-[23px] before:h-[23px] before:border-[#a5a5a5] before:border-[1px] before:mr-2 cursor-pointer 
+  }
+
+  .sectionbar{
+    @apply  before:absolute before:left-0 before:top-[4px] before:h-4 before:w-[1px] before:content-[''] before:block  before:bg-[#a5a5a5] after:absolute after:right-0 after:top-[4px] after:h-4 after:w-[1px] after:content-[''] after:block  after:bg-[#a5a5a5]
+  }
 }
 
 body {

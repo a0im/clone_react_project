@@ -1,43 +1,354 @@
-
 {
- "data" : [
-  { 
-    "title" : "골때리는 그녀들",
-    "type" : "드라마",
-    "genre" : "코미디",
-    "point" : 100,
-    "img" : "/images/골때리는그녀들.jpeg"
-  },
-
-  { 
-    "title" : "나는솔로",
-    "type" : "아무거나",
-    "genre" : "아무고나",
-    "point" : 300,  
-    "img" : "/images/나는솔로.jpeg"         
-  },
-  { 
-    "title" : "라디오스타",
-    "type" : "예능",
-    "genre" : "오락",
-    "point" : 400,
-    "img" : "/images/라스.jpeg"         
-
-    
-  },
-  { 
-    "title" : "런닝맨",
-    "type" : "예능",
-    "genre" : "오락",
-    "point" : 700,
-    "img" : "/images/런닝맨.jpeg"         
-  },
-  { 
-    "title" : "불타는 트롯맨",
-    "type" : "예능",
-    "genre" : "오락",
-    "point" : 20,
-    "img" : "/images/불타는트롯맨.jpeg"       
+  "data" : [
+    { 
+      "id" : 0,
+      "title" : "낫아웃",
+      "type" : "드라마",
+      "genre" : "추리",
+      "point" : 50,
+      "img" : "/images/content/content0.jpg"
+    },
+    { 
+      "id" : 1,
+      "title" : "에브리씽 올앳원스",
+      "type" : "드라마",
+      "genre" : "코미디",
+      "point" : 100,
+      "img" : "/images/content/content1.jpg"
+    },
+  
+    { 
+      "id" : 2,
+      "title" : "해리포터1",
+      "type" : "영화",
+      "genre" : "미스테리",
+      "point" : 300,  
+      "img" : "/images/content/content2.jpg"         
+    },
+    { 
+      "id" : 3,
+      "title" : "다크스트아워",
+      "type" : "영화",
+      "genre" : "추리",
+      "point" : 400,
+      "img" : "/images/content/content3.jpg"         
+    },
+    { 
+      "id" : 4,
+      "title" : "테이크나이트",
+      "type" : "영화",
+      "genre" : "미스터리",
+      "point" : 700,
+      "img" : "/images/content/content4.jpg"         
+    },
+    { 
+      "id" : 5,
+      "title" : "네버 히어",
+      "type" : "영화",
+      "genre" : "추리",
+      "point" : 20,
+      "img" : "/images/content/content5.jpg"       
+    },
+    { 
+      "id" : 6,
+      "title" : "고독한 미식가",
+      "type" : "교양",
+      "genre" : "오락",
+      "point" : 100,
+      "img" : "/images/content/content6.jpg"
+    },
+  
+    { 
+      "id" : 7,
+      "title" : "고딩엄빠",
+      "type" : "코미디",
+      "genre" : "교양",
+      "point" : 300,  
+      "img" : "/images/content/content7.jpg"         
+    },
+    { 
+      "id" : 8,
+      "title" : "놀면뭐하니",
+      "type" : "예능",
+      "genre" : "코미디",
+      "point" : 400,
+      "img" : "/images/content/content8.jpg"         
+    },
+    { 
+      "id" : 9,
+      "title" : "전지적참견시점",
+      "type" : "예능",
+      "genre" : "코미디",
+      "point" : 140,
+      "img" : "/images/content/content9.jpg"         
+    },
+    { 
+      "id" : 10,
+      "title" : "복면가왕",
+      "type" : "미스터리",
+      "genre" : "오락",
+      "point" : 20,
+      "img" : "/images/content/content10.jpg"       
+    },
+    { 
+      "id" : 11,
+      "title" : "사장님귀는당나귀귀",
+      "type" : "교양",
+      "genre" : "코미디",
+      "point" : 400,
+      "img" : "/images/content/content11.jpg"
+    },
+  
+    { 
+      "id" : 12,
+      "title" : "집사부일체",
+      "type" : "예능",
+      "genre" : "코미디",
+      "point" : 300,  
+      "img" : "/images/content/content12.jpg"         
+    },
+    { 
+      "id" : 13,
+      "title" : "감시자들",
+      "type" : "영화",
+      "genre" : "미스터리",
+      "point" : 950,
+      "img" : "/images/content/content13.jpg"         
+    },
+    { 
+      "id" : 14,
+      "title" : "오은영게임",
+      "type" : "교양",
+      "genre" : "코미디",
+      "point" : 540,
+      "img" : "/images/content/content14.jpg"         
+    },
+    { 
+      "id" : 15,
+      "title" : "특송",
+      "type" : "영화",
+      "genre" : "스릴러",
+      "point" : 20,
+      "img" : "/images/content/content15.jpg"       
+    },
+    { 
+      "id" : 16,
+      "title" : "후쿠오카",
+      "type" : "드라마",
+      "genre" : "미스터리",
+      "point" : 360,
+      "img" : "/images/content/content16.jpg"
+    },
+  
+    { 
+      "id" : 17,
+      "title" : "소방서옆경찰서",
+      "type" : "드라마",
+      "genre" : "추리",
+      "point" : 300,  
+      "img" : "/images/content/content17.jpg"         
+    },
+    { 
+      "id" : 18,
+      "title" : "용감한형사들",
+      "type" : "교양",
+      "genre" : "추리",
+      "point" : 730,
+      "img" : "/images/content/content18.jpg"         
+    },
+    { 
+      "id" : 19,
+      "title" : "그것이알고싶다",
+      "type" : "교양",
+      "genre" : "추리",
+      "point" : 850,
+      "img" : "/images/content/content19.jpg"         
+    },
+    { 
+      "id" : 20,
+      "title" : "마녀",
+      "type" : "영화",
+      "genre" : "미스터리",
+      "point" : 420,
+      "img" : "/images/content/content20.jpg"       
+    },
+    { 
+      "id" : 21,
+      "title" : "장르만로맨스",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 233,
+      "img" : "/images/content/content21.jpg"
+    },
+  
+    { 
+      "id" : 22,
+      "title" : "감시자들",
+      "type" : "영화",
+      "genre" : "추리",
+      "point" : 194,  
+      "img" : "/images/content/content22.jpg"         
+    },
+    { 
+      "id" : 23,
+      "title" : "더셰프",
+      "type" : "드라마",
+      "genre" : "미스터리",
+      "point" : 320,
+      "img" : "/images/content/content23.jpg"         
+    },
+    { 
+      "id" : 24,
+      "title" : "역린",
+      "type" : "영화",
+      "genre" : "미스터리",
+      "point" : 533,
+      "img" : "/images/content/content24.jpg"         
+    },
+    { 
+      "id" : 25,
+      "title" : "라디오스타",
+      "type" : "예능",
+      "genre" : "코미디",
+      "point" : 563,
+      "img" : "/images/content/content25.jpeg"       
+    },
+    { 
+      "id" : 26,
+      "title" : "골때리는 그녀들",
+      "type" : "드라마",
+      "genre" : "코미디",
+      "point" : 235,
+      "img" : "/images/content/content26.jpeg"
+    },
+  
+    { 
+      "id" : 27,
+      "title" : "불타는트롯맨",
+      "type" : "예능",
+      "genre" : "코미디",
+      "point" : 743,  
+      "img" : "/images/content/content27.jpeg"         
+    },
+    { 
+      "id" : 28,
+      "title" : "런닝맨",
+      "type" : "예능",
+      "genre" : "코미디",
+      "point" : 400,
+      "img" : "/images/content/content28.jpeg"         
+    },
+    { 
+      "id" : 29,
+      "title" : "나는솔로",
+      "type" : "예능",
+      "genre" : "오락",
+      "point" : 700,
+      "img" : "/images/content/content29.jpeg"         
+    },
+    { 
+      "id" : 30,
+      "title" : "핸드메이즈테일",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 20,
+      "img" : "/images/content/content30.jpeg"       
+    },
+    { 
+      "id" : 31,
+      "title" : "어쩌다마주친그대",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 20,
+      "img" : "/images/content/content31.jpg"       
+    },
+    { 
+      "id" : 32,
+      "title" : "팬레터를보내주세요",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 20,
+      "img" : "/images/content/content32.jpg"       
+    },
+    { 
+      "id" : 33,
+      "title" : "청춘블라썸",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 20,
+      "img" : "/images/content/content33.jpg"       
+    },
+    { 
+      "id" : 34,
+      "title" : "러브브로큰",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 133,
+      "img" : "/images/content/content34.jpg"       
+    },
+    { 
+      "id" : 35,
+      "title" : "펜스밖은 해피엔딩",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 240,
+      "img" : "/images/content/content35.jpg"       
+    },
+    { 
+      "id" : 36,
+      "title" : "내눈에콩깍지",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 206,
+      "img" : "/images/content/content36.jpg"       
+    },
+    { 
+      "id" : 37,
+      "title" : "연모",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 207,
+      "img" : "/images/content/content37.jpg"       
+    },
+    { 
+      "id" : 38,
+      "title" : "삼남매가용감하게",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 20,
+      "img" : "/images/content/content38.jpg"       
+    },
+    { 
+      "id" : 39,
+      "title" : "금혼령",
+      "type" : "드라마",
+      "genre" : "로맨스",
+      "point" : 20,
+      "img" : "/images/content/content39.jpg"       
+    },
+    { 
+      "id" : 40,
+      "title" : "1408",
+      "type" : "영화",
+      "genre" : "추리",
+      "point" : 20,
+      "img" : "/images/content/content40.jpg"       
+    },
+    { 
+      "id" : 41,
+      "title" : "범죄와의전쟁",
+      "type" : "드라마",
+      "genre" : "추리",
+      "point" : 20,
+      "img" : "/images/content/content41.jpg"       
+    },
+    { 
+      "id" : 42,
+      "title" : "검사외전",
+      "type" : "드라마",
+      "genre" : "추리",
+      "point" : 20,
+      "img" : "/images/content/content42.jpg"       
+    }
+   ] 
   }
- ] 
-}

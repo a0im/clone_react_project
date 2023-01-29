@@ -3,12 +3,18 @@ import { useSelector } from "react-redux";
 
 
 let checkTypes = (arg1,arg2) =>  {
+
   let result = 
     Array.isArray(arg1) && arg1.includes(arg2) ||
     arg1 === arg2 ||
     arg1 === "all"
     ? true 
     : false
+
+    // if (arg1) {
+      
+    // }
+
   return result
 }
 
@@ -20,11 +26,15 @@ const ContentItems = ({cate}) => {
   const renderCount = 10
   let renderData
 
+  if (contentStore != null && cate.genre == "인기") {
+    renderData = contentStore.data
+      .sort((a,b)=>b.point - a.point)
+      .filter(data => data.type == '드라마')
+  } 
+  else if (contentStore != null && cate.genre !== "인기") {
 
-  if (contentStore != null) {
-    renderData = contentStore.data.filter( data => {
+    renderData = contentStore.data.filter(data => {
       let result = false
-
       if (checkTypes(cate.genre, data.genre)) {
         if (checkTypes(cate.type, data.type)) {
           result = true
@@ -63,16 +73,6 @@ const ContentItems = ({cate}) => {
     <div className="relative h-[360px] mb-20">
       <ul ref={slideRef} className="absolute h-fit w-fit flex space-x-[10px] translate-x-1/2 transition-transform duration-500">
         {printContent}
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
-        <li className="w-[240px] h-[360px] rounded-xl bg-gray-300 flex-shrink-0"></li>
       </ul>
       <div onClick={prevSlide} className={ (contentSlide > 0 ? "opacity-100" : "opacity-30") + " content-sl-btn left-0 bg-[url('/public/images/content-sl-left.png')]"} />
       <div onClick={nextSlide} className={ (contentSlide <= 0 ? "opacity-100" : "opacity-30") + " content-sl-btn right-0 bg-[url('/public/images/content-sl-right.png')]"} />

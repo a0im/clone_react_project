@@ -24,7 +24,7 @@ const Banner = () =>{
   const bulletIdx = () => {
     switch (slideIdx) {
       case imgLength : return 0;
-      case  -1 : return imgLength - 1
+      case  -1 : return imgLength - 1;
       default : return slideIdx
     }
   }
@@ -61,7 +61,6 @@ const Banner = () =>{
     return () =>clearTimeout(runSlide)
   },[slideIdx,[]])
   
-
   const prevBtn = () => {
     if (!renderGud) return
     setSlideIdx(slideIdx - 1)
