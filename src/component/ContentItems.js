@@ -10,11 +10,6 @@ let checkTypes = (arg1,arg2) =>  {
     arg1 === "all"
     ? true 
     : false
-
-    // if (arg1) {
-      
-    // }
-
   return result
 }
 
