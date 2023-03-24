@@ -5,6 +5,15 @@
 
 
 @layer base {
+    html{
+      /* 드래그 방지 */
+      -ms-user-select: none;
+      -moz-user-select: -moz-none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      user-select: none;
+    }
+
   body{
     @apply bg-[#1b1b1b] text-white font-noto;
   }
